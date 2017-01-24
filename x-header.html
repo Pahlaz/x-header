@@ -1,0 +1,50 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../hamburger-button/hamburger-button.html">
+
+<dom-module id="x-header">
+	<template>
+		<style>
+			:host{
+				display: block;
+			}
+			header{
+				display: flex;
+				align-items: center;
+			}
+		</style>
+		
+		<header style$=" background: {{background}}; color: {{color}}; padding: 0 {{padding}}px; height:{{height}}px">
+			<hamburger-button color="{{color}}" width="30"></hamburger-button>
+
+			<!-- Adding spacing between hamburger button and logo -->
+			<div style="width: 20px;"></div>
+			
+			<content id="logo"></content>
+		</header>
+	</template>
+
+	<script>
+		Polymer({
+			is: 'x-header',
+		  properties: {
+		  	height: {
+		  		type: Number,
+		  		value: 50,
+		  		readOnly: false
+		  	}, 
+				padding: {
+		  		type: Number,
+		  		value: 20
+		  	},
+				color: {
+					type: String,
+					value: "#eee"
+				},
+				background: {
+					type: String,
+					value: "#232323"
+				}
+		  }
+		});
+	</script>
+</dom-module>

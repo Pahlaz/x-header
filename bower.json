@@ -1,0 +1,24 @@
+{
+  "name": "x-header",
+  "homepage": "https://github.com/Pahlaz/x-header",
+  "authors": [
+    "Divyank Pahlazani <pahlaz.divyank@gmail.com>"
+  ],
+  "description": "Header made using polymer",
+  "main": "x-header.html",
+  "keywords": [
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.7.1",
+    "hamburger-button": "Pahlaz/hamburger-button"
+  }
+}
